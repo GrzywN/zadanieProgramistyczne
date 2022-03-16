@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,600&family=Courgette&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+$font-family-sans: 'Nunito Sans', sans-serif;
+$font-family-serif: 'Bodoni Moda', serif;
+$font-family-cursive: 'Courgette', cursive;
+
+$color-dark: rgb(27, 26, 23);
+$color-darker: darken($color-dark, 2%);
+$color-orange: rgb(228, 88, 38);
+$color-golden: rgb(240, 165, 0);
+$color-beige: rgb(230, 213, 184);
+
+:root {
+  --gradient: linear-gradient(to left top, #dd2476 10%, #ff512f 90%) !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+}
+
+section {
+  height: 100vh;
+}
+
+.navbar {
+  border-bottom: 2px solid $color-dark;
+}
+
+.primary-header {
+  font-family: $font-family-sans;
+  font-size: clamp(5rem, 5rem + 1vw, 6rem);
+  color: $color-dark;
+}
+
+.my-projects {
+  font-family: $font-family-sans;
+  font-size: clamp(4rem, 4rem + 1vw, 5rem);
+  color: $color-dark;
+}
+
+.to-animate {
+  color: $color-orange;
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: $color-beige;
+}
+
+.navbar-brand {
+  font-family: $font-family-serif;
+  font-weight: 400;
+  color: $color-dark;
+  transition: all 150ms ease;
+  &:hover {
+    color: $color-dark;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.me {
+  font-family: $font-family-cursive;
+  font-weight: 700;
+  color: $color-orange;
+}
+
+.nav-link {
+  font-family: $font-family-sans;
+  font-weight: 700;
+  font-size: larger;
+  color: $color-dark;
+  transition: color 150ms ease;
+  &:hover {
+    color: lighten($color-golden, 15%);
+  }
+}
+
+// Underline animation
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: $color-golden;
+  width: 0%;
+  content: '';
+  height: 4px;
+  transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+.card {
+  font-family: $font-family-sans;
+  transition: transform 100ms ease-in;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Card styles
+
+// .card {
+//   background: #222;
+//   border: 1px solid #dd2476;
+//   color: rgba(250, 250, 250, 0.8);
+//   margin-bottom: 2rem;
+// }
+
+// .btn {
+//   border: 5px solid;
+//   border-image-slice: 1;
+//   background: var(--gradient) !important;
+//   -webkit-background-clip: text !important;
+//   -webkit-text-fill-color: transparent !important;
+//   border-image-source: var(--gradient) !important;
+//   text-decoration: none;
+//   transition: all 0.4s ease;
+// }
+
+// .btn:hover,
+// .btn:focus {
+//   background: var(--gradient) !important;
+//   -webkit-background-clip: none !important;
+//   -webkit-text-fill-color: #fff !important;
+//   border: 5px solid #fff !important;
+//   box-shadow: #222 1px 0 10px;
+//   text-decoration: underline;
+// }
