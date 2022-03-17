@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,600&family=Courgette&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+$font-family-sans: 'Nunito Sans', sans-serif;
+$font-family-serif: 'Bodoni Moda', serif;
+$font-family-cursive: 'Courgette', cursive;
+
+$color-orange: #ff4f00;
+$color-golden: #ffb500;
+$color-dark-grey: #3e3e3e;
+$color-light-grey: #d9d9d9;
+$color-white: #fafafa;
+$color-black: #00020f;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  background-image: url(../images/background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.header {
+  max-height: 80px;
+  background-color: $color-golden;
+}
+
+.navbar-nav {
+  background-color: $color-golden;
+}
+
+.navbar-brand {
+  font-family: $font-family-serif;
+  font-weight: 400;
+  color: $color-black;
+  transition: all 150ms ease;
+  &:hover {
+    color: $color-black;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-family: $font-family-sans;
+  font-weight: 700;
+  font-size: larger;
+  color: $color-black;
+  transition: color 150ms ease;
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: $color-orange;
+  width: 0%;
+  height: 4px;
+  transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+.separator {
+  height: 60vh;
+}
+
+.me {
+  font-family: $font-family-cursive;
+  font-weight: 700;
+  color: $color-orange;
+}
+
+p {
+  font-family: $font-family-sans;
+}

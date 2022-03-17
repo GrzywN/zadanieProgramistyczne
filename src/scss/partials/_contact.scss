@@ -1,0 +1,22 @@
+.contact-me {
+  font-family: $font-family-serif;
+  font-weight: 700;
+}
+
+.questions-to-ask {
+  font-family: $font-family-sans;
+}
+
+form {
+  border-radius: 0.75rem;
+  padding: 2em;
+}
+
+.form-label {
+  font-family: $font-family-sans;
+  font-weight: 600;
+}
+
+#submit {
+  width: 40%;
+}

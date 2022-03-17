@@ -1,0 +1,73 @@
+.scroll-down-btn {
+  color: $color-orange;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+  transition: transform 200ms ease;
+  &:hover {
+    transform: translate(-50%, -50%) scale(4);
+    color: $color-orange;
+  }
+}
+
+.scroll-up-btn {
+  color: $color-orange;
+  display: grid;
+  place-items: center;
+  transform: scale(3);
+  transition: transform 200ms ease;
+  &:hover {
+    transform: scale(4);
+    color: $color-orange;
+  }
+}
+
+.primary-header {
+  font-family: $font-family-sans;
+  font-size: clamp(5rem, 5rem + 1vw, 6rem);
+  color: $color-white;
+  mix-blend-mode: difference;
+}
+
+.to-animate-header {
+  color: $color-orange;
+  font-weight: 700;
+}
+
+.my-projects {
+  font-family: $font-family-sans;
+  font-size: clamp(4rem, 4rem + 1vw, 5rem);
+  color: $color-black;
+}
+
+.card-body {
+  background-color: $color-dark-grey;
+}
+
+.card-head {
+  overflow: hidden;
+}
+
+.card-img-top {
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+  font-family: $font-family-sans;
+}
+
+.card-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-subtitle {
+  font-weight: 600;
+}
