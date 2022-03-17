@@ -33,18 +33,25 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link text-center"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link active text-center" href="about.html"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link text-center" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -74,10 +81,12 @@
               <p class="card-text">
                 Simple application to help people search GitHub profiles.
               </p>
-              <a href="#" class="btn mr-2"
+              <a href="#" class="btn mr-2 btn-info"
                 ><i class="fas fa-link"></i> Visit Site</a
               >
-              <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+              <a href="#" class="btn btn-dark"
+                ><i class="fab fa-github"></i> Github</a
+              >
             </div>
           </div>
         </div>
@@ -94,10 +103,12 @@
                 HTML | SCSS | BEM | JS | API
               </h6>
               <p class="card-text">Generate an advice to improve your mood!</p>
-              <a href="#" class="btn mr-2"
+              <a href="#" class="btn mr-2 btn-info"
                 ><i class="fas fa-link"></i> Visit Site</a
               >
-              <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+              <a href="#" class="btn btn-dark"
+                ><i class="fab fa-github"></i> Github</a
+              >
             </div>
           </div>
         </div>
@@ -112,15 +123,63 @@
               <h5 class="card-title">Equalizer landing page</h5>
               <h6 class="card-subtitle mb-2 text-muted">HTML | SCSS | BEM</h6>
               <p class="card-text">Simple landing page designed in Figma</p>
-              <a href="#" class="btn mr-2"
+              <a href="#" class="btn mr-2 btn-info"
                 ><i class="fas fa-link"></i> Visit Site</a
               >
-              <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+              <a href="#" class="btn btn-dark"
+                ><i class="fab fa-github"></i> Github</a
+              >
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <div class="mb-4">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://karbin.me/">karbin.me</a>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -128,8 +187,8 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-      let typed = new Typed('.to-animate', {
-        strings: ['Front-end dev.', 'hard-working guy.', 'Tech freak.'],
+      let typed = new Typed(".to-animate", {
+        strings: ["Front-end dev.", "Designer.", "Tech freak."],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
